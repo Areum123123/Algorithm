@@ -50,5 +50,7 @@ function solution(n) {
     else if(n <= 100){
         return 15;
     }
-    
+    else{
+        return '주문 불가';
+    }
 }
