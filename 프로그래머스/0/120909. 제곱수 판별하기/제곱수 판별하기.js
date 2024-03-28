@@ -1,6 +1,6 @@
 function solution(n) {
-    let squareR = Math.sqrt(n) //정수 소수
-    let integer = Math.floor(squareR) //정수
+    let squareR = Math.sqrt(n)
+    let integer = Math.floor(squareR) 
   if(squareR === integer){
     return 1;
   } else{ 
