@@ -5,6 +5,6 @@ function solution(sides) {
     for(let element of sides){
         totalSum += element;
     }
-    let sumTwo = totalSum - long
-    return sumTwo > long ? 1 : 2 ;
+   
+    return (totalSum - long) > long ? 1 : 2 ;
 }
