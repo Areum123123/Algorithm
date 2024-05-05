@@ -1,4 +1,4 @@
 function solution(a, b) {
     
-  return a.reduce((acc, _, i) => acc + a[i]* b[i], 0);
+  return a.reduce((acc, el, i) => acc + el* b[i], 0);
 }
