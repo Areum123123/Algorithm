@@ -1,20 +1,17 @@
 function solution(s) {
-    let words = s.split(' '); // 공백을 기준으로 문자열을 단어 단위로 분리
+    let arrayS = s.split(' ')
     let result = '';
-
-    for (let i = 0; i < words.length; i++) {
-        let word = words[i]
-        for (let j = 0; j < word.length; j++) {
+    for (let i = 0; i < arrayS.length; i++) {
+        for (let j = 0; j < arrayS[i].length; j++) {
             if (j % 2 === 0) {
-                result += word[j].toUpperCase();
-            } else { 
-                result += word[j].toLowerCase();
+                result += arrayS[i][j].toUpperCase();
+            } else {
+                result += arrayS[i][j].toLowerCase();
             }
         }
-        if (i !== words.length - 1) { // 마지막 단어가 아닌 경우에는 공백 추가
-            result += ' ';
-        }
+        result += ' ';
     }
-    return result;
+    
+    return result.slice(0, result.length-1);
 }
 
