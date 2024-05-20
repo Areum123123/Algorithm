@@ -3,7 +3,6 @@ function solution(s) {
     let compare =[]; //비교군
     
     for(let i =0; i<s.length; i++){
-        //만약 컴페어에 s[i]가 없다면 -1 추가 그리고 s[i] 리절트 추가
       if(!compare.includes(s[i])){
           result.push(-1);
           compare.push(s[i]);
