@@ -1,8 +1,11 @@
 function solution(food) {
-    let res = '';
-    for (let i = 1; i < food.length; i++) {
-        res += String(i).repeat(Math.floor(food[i]/2));
+    let result ='';
+    for(let i =1; i < food.length; i++){
+        if(food[i] > 1){
+            let count = Math.floor(food[i]/2);
+            result += String(i).repeat(count);
+        }
     }
-
-    return res + '0' + [...res].reverse().join('');
+    let reverse = result.split('').reverse().join('');
+    return result + '0'+reverse;
 }
