@@ -1,19 +1,19 @@
+
+
 function solution(k, m, score) {
-    if(score.length < m){
+   if(score.length < m){
         return 0;
     }
     
-    score.sort((a, b) => a - b);
+   score.sort((a,b)=> a-b);
     
-    let total = 0;
-    
+    let total = 0
     while(score.length >= m){
-        const box = score.splice(score.length - m, m);
+     let array = score.splice(score.length - m, m);
+      let price = m * Math.min(...array) ;
         
-        const prize = m * Math.min(...box);
-        
-        total += prize;
+        total += price;
     }
-    
     return total;
+
 }
