@@ -1,13 +1,11 @@
-function solution(n, m, section) {
-    let result = 0;
-    let painted =0;
-    
-    for(let i  of section){
-        if(i < painted){
-            continue;
+function solution(n, m, sections) {
+    let answer = 0;
+    let painted = 0;
+    for(let el of sections) {
+        if(painted < el) {
+            answer++;
+            painted = el+m-1;
         }
-        painted = i+m;
-        result += 1;
     }
-    return result;
+    return answer;
 }
