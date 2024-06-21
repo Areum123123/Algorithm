@@ -30,4 +30,3 @@ function solution(ingredient) {
     
     return burgerCount;
 }
-출처: https://totally-developer.tistory.com/40 [Totally 개발자:티스토리]
