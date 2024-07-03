@@ -1,5 +1,5 @@
 function solution(keymap, targets) {
-  const answer = [];
+  const result = [];
   const map = new Map();
 
   for (const key of keymap) {
@@ -13,8 +13,8 @@ function solution(keymap, targets) {
     for (let i = 0; i < target.length; i++) {
       count += map.get(target[i]);
     }
-    answer.push(count || -1);
+    result.push(count || -1);
   }
 
-  return answer;
+  return result;
 }
