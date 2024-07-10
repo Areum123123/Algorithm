@@ -1,9 +1,9 @@
 function solution(n) {
-    var answer = [];
+    let result = [];
    for(let i =1; i <= n; i++){
        if(i % 2 !== 0){
-           answer.push(i);
+           result.push(i);
        }
    }
-    return answer;
+    return result;
 }
