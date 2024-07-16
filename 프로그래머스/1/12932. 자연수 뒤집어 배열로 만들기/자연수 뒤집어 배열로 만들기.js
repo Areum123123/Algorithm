@@ -1,8 +1,5 @@
 function solution(n) {
-   let answer = [];
-   let arr =String(n).split('');
- for(let el of arr){ 
-     answer.push(Number(el));
- }
-  return  answer.reverse();
+ 
+  const changeArray = String(n).split('').reverse()
+  return changeArray.map(n => parseInt(n))
 }
