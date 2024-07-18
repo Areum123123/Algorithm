@@ -1,9 +1,9 @@
 function solution(n) {
-   let sqrt = Math.sqrt(n)
-   if(sqrt % 1 === 0){
-       return Math.pow((sqrt+1),2);
-   }else {
-       return -1;
-   }
-      
+let x = Math.sqrt(n)
+if(Number.isInteger(x)){
+    return (x+1)**2
+} else {
+    return -1
+  }
 }
+
