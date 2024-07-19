@@ -1,4 +1,5 @@
 function solution(n) {
-   let result = String(n).split('').sort((a,b)=>b-a).join('');
-return Number(result);
-}
+ let a= String(n).split('').reverse()
+ return Number(a.sort((a,b) => b - a).join(''))
+ 
+ }
